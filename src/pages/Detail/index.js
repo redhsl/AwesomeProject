@@ -15,7 +15,7 @@ class Page2 extends React.Component {
             </View>
         );
     }
-}
+};
 class Page3 extends React.Component {
     render() {
         return (
@@ -24,7 +24,7 @@ class Page3 extends React.Component {
             </View>
         );
     }
-}
+};
 class Page4 extends React.Component {
     render() {
         return (
@@ -33,7 +33,7 @@ class Page4 extends React.Component {
             </View>
         );
     }
-}
+};
 
 export const BottomTab = createAppContainer(
     createBottomTabNavigator(
@@ -55,7 +55,7 @@ export const BottomTab = createAppContainer(
                 navigationOptions: {
                     tabBarLabel: '通讯录',
                     tabBarIcon: ({ tintColor, focused }) => (
-                        <MaterialIcons name={'address-book'} size={26} style={{ color: tintColor }} />
+                        <MaterialIcons name={'account-box'} size={26} style={{ color: tintColor }} />
                     ),
                     tabBarOnPress: (event) => {
                         event.defaultHandler();
