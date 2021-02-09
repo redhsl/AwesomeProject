@@ -4,21 +4,14 @@ import { createAppContainer, createSwitchNavigator } from 'react-navigation';
 import { createStackNavigator } from 'react-navigation-stack';
 import { createBottomTabNavigator } from 'react-navigation-tabs';
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
+import WeChart from '../../components/WeChart'
 
-class Page1 extends React.Component {
-    render() {
-        return (
-            <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-                <Text>Home1!</Text>
-            </View>
-        );
-    }
-}
+
 class Page2 extends React.Component {
     render() {
         return (
             <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-                <Text>Home2!</Text>
+                <MaterialIcons name={'address-book'} size={66} style={{ color: "red" }} />
             </View>
         );
     }
@@ -46,7 +39,7 @@ export const BottomTab = createAppContainer(
     createBottomTabNavigator(
         {
             Page1: {
-                screen: Page1,
+                screen: WeChart,
                 navigationOptions: {
                     tabBarLabel: '微信',
                     tabBarIcon: ({ tintColor, focused }) => (
