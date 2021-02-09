@@ -9,7 +9,7 @@ import {
 
 let data = require('./data.json');
 
-export default class one extends Component {
+export default class WeChart extends Component {
 
     render() {
         return (
@@ -17,6 +17,7 @@ export default class one extends Component {
                 data={data.data}
                 numColumns ={3} // 一行3个
                 renderItem={({item})=><GoodsList name={item.title} price={item.price} url={item.icon}/>}
+                keyExtractor={item => item.key}
             />
         )
     }
