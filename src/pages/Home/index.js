@@ -42,7 +42,7 @@ class HomeScreen extends Component {
 
 
                 <Container>
-                    <Label text="用户名" />
+                    <Label text="用户名1" />
                     <TextInput
                         ref="inputLoginName"
                         style={styles.textInput}
